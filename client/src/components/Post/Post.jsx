@@ -9,14 +9,14 @@ const Post = props => {
 
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/read")
+    Axios.get(process.env.REACT_APP_API_URL)
     .then(response => {
       props.setSongsList(response.data)
     });
   }, [])
 
   const addToList = () => {
-    Axios.post("http://localhost:3001/insert", {
+    Axios.post(process.env.REACT_APP_API_URL, {
       name: name,
       url: url
     });
