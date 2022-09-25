@@ -9,7 +9,14 @@
     padding: 20px 0;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column;
+    gap: 30px; }
+    .App__songs__header__addSongBtn {
+      fill: #FF9A8B;
+      cursor: pointer; }
+      .App__songs__header__addSongBtn:hover {
+        opacity: .7; }
     .App__songs__header__buttons-list {
       width: 100%;
       display: flex;

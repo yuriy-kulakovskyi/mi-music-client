@@ -13,7 +13,7 @@ const Post = props => {
     .then(response => {
       props.setSongsList(response.data)
     });
-  }, [])
+  })
 
   const addToList = () => {
     Axios.post(process.env.REACT_APP_API_URL + '/insert', {

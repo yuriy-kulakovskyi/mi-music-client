@@ -11,6 +11,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+    &__addSongBtn {
+      fill: #FF9A8B;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
 
     &__buttons-list {
       width: 100%;
