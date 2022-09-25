@@ -1,0 +1,55 @@
+@import 'variables';
+
+.App__post-song {
+  width: 100%; min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+  &__title {
+    color: $font-color;
+    text-shadow: $text-shadow;
+    font-size: 45px;
+    position: absolute;
+    top: 40px;
+  }
+
+  label {
+    font-size: 25px;
+    color: $font-color;
+    text-shadow: $text-shadow;
+  }
+
+  input {
+    width: 20%; min-height: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: $input-shadow;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: -5px;
+  }
+
+  &__addBtn {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF44CC;
+    box-shadow: 0 0 10px #FF44CC;
+    color: #fff;
+    transition: all .6s ease-in-out;
+
+    &:hover {
+      background-color: #fff;
+      color: #FF44CC;
+    }
+  }
+}

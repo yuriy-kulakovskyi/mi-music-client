@@ -1,0 +1,82 @@
+.App__songs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  .App__songs__header {
+    width: 98%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .App__songs__header__buttons-list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .App__songs__header__buttons-list__button {
+        width: 33%;
+        min-height: 200px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: red;
+        padding: 30px 20px;
+        border-radius: 25px;
+        cursor: pointer; }
+        .App__songs__header__buttons-list__button svg {
+          fill: #fff; }
+          .App__songs__header__buttons-list__button svg path {
+            fill: #fff; }
+        .App__songs__header__buttons-list__button__title {
+          color: #fff;
+          margin-top: 10px; }
+      .App__songs__header__buttons-list .favourites {
+        background-color: #FF9A8B;
+        background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%); }
+      .App__songs__header__buttons-list .playlists {
+        background-color: #08AEEA;
+        background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%); }
+      .App__songs__header__buttons-list .recent {
+        background-color: #FBAB7E;
+        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); }
+  .App__songs__list {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 5px;
+    padding: 0 20px; }
+    .App__songs__list__song {
+      width: 100%;
+      min-height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer; }
+      .App__songs__list__song__right__dots {
+        height: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .App__songs__list__song__right__dots__dot {
+          height: 6px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+  @media (max-width: 571px) {
+    .App__songs__header__buttons-list__button {
+      min-height: 150px; } }
+  @media (max-width: 400px) {
+    .App__songs__header__buttons-list__button svg {
+      width: 20px;
+      height: 20px; }
+    .App__songs__header__buttons-list__button__title {
+      font-size: 15px; } }
+
+/*# sourceMappingURL=Songs.css.map */

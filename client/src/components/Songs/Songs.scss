@@ -1,0 +1,124 @@
+.App__songs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  &__header {
+    width: 98%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__buttons-list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__button {
+        width: 33%; min-height: 200px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: red;
+        padding: 30px 20px;
+        border-radius: 25px;
+        cursor: pointer;
+
+        svg {
+          fill: #fff;
+
+          path {
+            fill: #fff;
+          }
+        }
+
+        &__title {
+          color: #fff;
+          margin-top: 10px;
+        }
+      }
+
+      .favourites {
+        background-color: #FF9A8B;
+        background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+      }
+
+      .playlists {
+        background-color: #08AEEA;
+        background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+      }
+
+      .recent {
+        background-color: #FBAB7E;
+        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+      }
+    }
+  }
+
+  &__list {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 5px;
+    padding: 0 20px;
+
+    &__song {
+      width: 100%; min-height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      &__right {
+        &__dots {
+          height: 1px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          &__dot {
+            height: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 571px) {
+    &__header {
+      &__buttons-list {
+        &__button {
+          min-height: 150px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    &__header {
+      &__buttons-list {
+        &__button {
+          svg {
+            width: 20px; height: 20px;
+          }
+
+          &__title {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
