@@ -15,8 +15,6 @@
     .App__songs__header__addSongBtn {
       fill: #FF9A8B;
       cursor: pointer; }
-      .App__songs__header__addSongBtn:hover {
-        opacity: .7; }
     .App__songs__header__buttons-list {
       width: 100%;
       display: flex;
