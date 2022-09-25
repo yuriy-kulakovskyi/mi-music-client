@@ -19,7 +19,7 @@
     color: #fff;
     text-shadow: 0 0 5px #fff; }
   .App__post-song input {
-    width: 20%;
+    width: 300px;
     min-height: 40px;
     border-radius: 10px;
     border: none;

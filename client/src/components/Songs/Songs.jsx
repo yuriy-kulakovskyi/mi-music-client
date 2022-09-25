@@ -31,7 +31,7 @@ const Songs = props => {
       } else {
         pageAudio.forEach(item => item.pause());
         pageSongsNames.forEach(item => item.style.color = '#000');
-        event.target.firstChild.lastChild.play();
+        event.target.firstChild.lastChild.pause();
         playing = false;
       }
     }
@@ -49,7 +49,7 @@ const Songs = props => {
           </div>
           <div className="App__songs__header__buttons-list__button playlists">
             <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="36px" viewBox="0 0 12 18" version="1.1">
-              <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g id="Rounded" transform="translate(-786.000000, -2859.000000)">
                       <g id="Image" transform="translate(100.000000, 2626.000000)">
                           <g id="-Round-/-Image-/-music_note" transform="translate(680.000000, 230.000000)">
