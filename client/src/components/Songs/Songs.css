@@ -78,7 +78,8 @@
           align-items: center; }
   @media (max-width: 571px) {
     .App__songs__header__buttons-list__button {
-      min-height: 150px; } }
+      min-height: 100px;
+      padding: 20px 15px; } }
   @media (max-width: 400px) {
     .App__songs__header__buttons-list__button svg {
       width: 20px;
