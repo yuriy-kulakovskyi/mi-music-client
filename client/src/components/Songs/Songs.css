@@ -115,7 +115,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 50px; }
+      gap: 50px;
+      user-select: none; }
       .App__songs__audio-wrapper__controls__play-button, .App__songs__audio-wrapper__controls__next-button {
         width: 70px;
         height: 70px;
