@@ -9,14 +9,14 @@ const Post = props => {
 
 
   useEffect(() => {
-    Axios.get("https://mi-music.herokuapp.com/read")
+    Axios.get(process.env.REACT_APP_API_URL + "read")
     .then(response => {
       props.setSongsList(response.data)
     });
   })
 
   const addToList = () => {
-    Axios.post('https://mi-music.herokuapp.com/insert', {
+    Axios.post(process.env.REACT_APP_API_URL + 'insert', {
       name: name,
       url: url
     });
