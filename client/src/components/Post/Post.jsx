@@ -9,14 +9,14 @@ const Post = props => {
 
 
   useEffect(() => {
-    Axios.get(process.env.REACT_APP_API_URL + '/read')
+    Axios.get("https://mi-music.herokuapp.com/read")
     .then(response => {
       props.setSongsList(response.data)
     });
   })
 
   const addToList = () => {
-    Axios.post(process.env.REACT_APP_API_URL + '/insert', {
+    Axios.post('https://mi-music.herokuapp.com/insert', {
       name: name,
       url: url
     });
@@ -36,6 +36,7 @@ const Post = props => {
         setUrl(event.target.value);
       }}/>
       <button onClick={addToList} className="App__post-song__addBtn">Add To List</button>
+
     </div>
   );
 }

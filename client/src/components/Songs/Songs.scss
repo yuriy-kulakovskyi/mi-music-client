@@ -129,4 +129,150 @@
       }
     }
   }
+
+  &__audio-wrapper {
+    width: 100%; min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0; left: 0;
+    border-top: .5px solid rgb(154, 148, 148);
+    padding: 0 50px;
+
+    &__song-info {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      &__circle {
+        width: 130px; height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+          width: 100%; height: 100%;
+          animation: spin 2s linear infinite;
+        }
+      }
+    }
+
+    &__controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      &__play-button,
+      &__next-button {
+        width: 70px; height: 70px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      &__play-button {
+        position: relative;
+
+        .circle {
+          position: relative;
+        }
+
+        .play-icon {
+          position: absolute;
+        }
+
+        .pause {
+          transform: rotate(0);
+          display: none;
+        }
+
+        .play {
+          transform: rotate(0);
+          left: 25%;
+        }
+
+        svg {          
+          transform: rotate(270deg);
+
+          circle {
+            &:nth-child(1) {
+              fill: transparent;
+              width: 100%; height: 100%;
+              stroke:rgb(154, 148, 148);
+              stroke-width: 3px;
+            }
+
+            &:nth-child(2) {
+              fill: transparent;
+              width: 100%; height: 100%;
+              stroke: #000;
+              stroke-width: 3px;
+            }
+          }
+        }
+      }
+
+      &__next-button {
+        position: relative;
+      }
+    }
+  }
+
+  @media (max-width: 775px) {
+    &__audio-wrapper {
+      padding: 0 15px;
+
+      &__song-info {
+        gap: 0;
+
+        &__circle {
+          width: 100px;
+        }
+
+        &__song-title {
+          font-size: 15px;
+        }
+      }
+
+      &__controls {
+        gap: 10px;
+
+        &__play-button {
+          .circle {
+            circle {
+              r: 20;
+            }
+          }
+
+          .play {
+            width: 25px; height: 25px;
+            left: 34%;
+          }
+
+          .pause {
+            width: 20px; height: 20px;
+            left: 35%;
+          }
+        }
+
+        &__next-button {
+          width: 25px; height: 25px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }
